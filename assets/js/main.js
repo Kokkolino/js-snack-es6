@@ -52,9 +52,12 @@ function snack2(){
     studentsName.push(students[key].name.toUpperCase());
   }
   alert(`la lista nomi é: ${studentsName.join(', ')}`);
+    //   grades check
   let gradesCheck = students.filter(student => student.grades > 70);
-  console.log(gradesCheck);
-  alert(gradesCheck[1]);
+  alert(gradesCheck);
+//   grades and id check
+  let gradesIdCheck = students.filter(student => student.grades > 70 && student.id > 120);
+  alert(gradesIdCheck);
 }
 
 document.getElementById('snack2').addEventListener('click',snack2);
