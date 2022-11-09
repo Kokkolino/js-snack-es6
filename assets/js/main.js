@@ -61,3 +61,40 @@ function snack2(){
 }
 
 document.getElementById('snack2').addEventListener('click',snack2);
+
+// snack3
+function snack3(){
+    let bikes = [
+        {
+            name: "blu",
+            weight: 22,
+        },
+        {
+            name: "gialla",
+            weight: 23,
+        },
+        {
+            name: "verde",
+            weight: 25,
+        },
+        {
+            name: "arancione",
+            weight: 20,
+        },
+        {
+            name: "rosa",
+            weight: 18,
+        }
+    ];
+    let x= {
+        name: null,
+        weight: 3000,
+    };
+    for (let i = 0; i < bikes.length; i++) {
+        if(bikes[i].weight<x.weight){
+            x= bikes[i];
+        }
+    }
+    alert(`la bici ${x.name} é la piú leggera con i suoi ${x.weight}Kg`);
+}
+document.getElementById('snack3').addEventListener('click',snack3);
